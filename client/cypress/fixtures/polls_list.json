@@ -1,0 +1,72 @@
+{
+    "data":[
+       {
+          "options":[
+             "123",
+             "456"
+          ],
+          "_id":"60fa549f4861ed233884a384",
+          "subject":"Lets have a try",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       },
+       {
+          "options":[
+             "Какать",
+             "Писять",
+             "Кушать"
+          ],
+          "_id":"60fa5ab0f7b7b02fa4de2e31",
+          "subject":"Че будем делать сегодня?",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       },
+       {
+          "options":[
+             "Yes",
+             "No"
+          ],
+          "_id":"6100cd246c10cd38845edd99",
+          "subject":"Do we go out tonight?",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       },
+       {
+          "options":[
+             "Red",
+             "Infrared",
+             "Purple",
+             "White",
+             "Ocean"
+          ],
+          "_id":"6100cd5b6c10cd38845edd9c",
+          "subject":"Which color to pick?",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       },
+       {
+          "options":[
+             "1",
+             "2",
+             "3",
+             "4",
+             "5"
+          ],
+          "_id":"6100d4042576a12e68281c56",
+          "subject":"Pick a number",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       },
+       {
+          "options":[
+             "",
+             ""
+          ],
+          "_id":"610262f2a171ad4a7caf1034",
+          "subject":"123",
+          "user_id":"60f7d156faa30d38e847925d",
+          "__v":0
+       }
+    ],
+    "message":"Success."
+ }

@@ -1,0 +1,18 @@
+{
+    "data":{
+       "poll":{
+          "options":[
+             "123",
+             "123"
+          ],
+          "_id":"610225cf35ef1141a8c042e7",
+          "subject":"123",
+          "user_id":"610222be7fe11b43d0ddddde",
+          "__v":0
+       },
+       "answers":[
+          
+       ]
+    },
+    "message":"Success"
+ }

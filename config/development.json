@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "some secret key that none can guess",
+    "mongoUri": "",
+    "baseUrl": "http://localhost:5000"
+  }

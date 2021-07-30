@@ -1,0 +1,8 @@
+{
+    "experimentalFetchPolyfill": true,
+    "requestTimeout": 15000,
+    "numTestsKeptInMemory": 1,
+    "env": {},
+    "viewportWidth": 1366,
+    "viewportHeight": 768
+}
