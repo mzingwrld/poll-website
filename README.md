@@ -1,19 +1,24 @@
-# Poll website
 <div align="center">
+<h1 align="center">
+  Poll website
+</h1>
 <img src="./client/public/logo192.png" width="192"  />
+  
 [Live](https://ichervonyy-poll-website.ru/)
-<div>
 
-With this project, you can create polls, send them to other people and follow the results online.\
+</div>
 
-Backend & Frontend parts:\
-Backend located at directory / (root)\
+With this project, you can create polls, send them to other people and follow the results online.
+
+Backend located at directory / (root)
+
 * Nodejs
 * Express
 * Mongodb
 * Socket.io
 
-Frontend located at directory /client\
+Frontend located at directory /client
+
 * React
 * Typescript
 * Materializecss
