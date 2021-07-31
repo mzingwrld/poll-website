@@ -1,5 +1,9 @@
 /* eslint-disable no-new-wrappers */
 describe('Poll create page tests', () => {
+    beforeEach(() => {
+        cy.intercept('GET', '**/api/auth', { fixture: 'auth.json' }).as('getAuth');
+    });
+
     const STRING_101 = new String(1).repeat(101);
     const STRING_100 = new String(1).repeat(100);
     const STRING_99 = new String(1).repeat(99);

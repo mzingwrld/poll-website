@@ -1,4 +1,8 @@
 describe('Polls page tests', () => {
+    beforeEach(() => {
+        cy.intercept('GET', '**/api/auth', { fixture: 'auth.json' }).as('getAuth');
+    });
+
     it('If polls were created by a user, user can see this polls in a table', () => {
         cy.intercept('GET', '**/api/auth', { fixture: 'auth.json' }).as('getAuth');
         cy.intercept('GET', '**/api/poll/list', { fixture: 'polls_list.json' }).as('pollList');

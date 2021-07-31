@@ -125,38 +125,31 @@ export const PollViewPage = () => {
                             />
                             <label htmlFor="name">Your name</label>
                         </div>
-                        {poll.options.map((option, index) => {
-                            console.group('Checked')
-                            console.log('selectedOption', selectedOption)
-                            console.log('String(index)', String(index))
-                            console.log('selectedOption === String(index)', selectedOption === String(index))
-                            console.groupEnd()
-                            return (
-                                <p
-                                    key={index}
+                        {poll.options.map((option, index) => (
+                            <p
+                                key={index}
+                            >
+                                <label
+                                    htmlFor={String(index)}
                                 >
-                                    <label
-                                        htmlFor={String(index)}
+                                    <input
+                                        name={`${poll._id}-${index}`}
+                                        type="radio"
+                                        value={option}
+                                        id={String(index)}
+                                        checked={selectedOption === String(index)}
+                                        onChange={onSelectOption}
+                                        data-cy={selectedOption === String(index) && `option-${index}-checked`}
+                                    />
+                                    <span
+                                        data-cy={`option-${index}`}
                                     >
-                                        <input
-                                            name={`${poll._id}-${index}`}
-                                            type="radio"
-                                            value={option}
-                                            id={String(index)}
-                                            checked={selectedOption === String(index)}
-                                            onChange={onSelectOption}
-                                            data-cy={selectedOption === String(index) && `option-${index}-checked`}
-                                        />
-                                        <span
-                                            data-cy={`option-${index}`}
-                                        >
-                                            {option}
-                                        </span>
-                                    </label>
+                                        {option}
+                                    </span>
+                                </label>
 
-                                </p>
-                            )
-                        })}
+                            </p>
+                        ))}
                         <button
                             className="btn waves-effect waves-light"
                             type="submit"

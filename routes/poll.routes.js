@@ -124,7 +124,6 @@ router.post(
     res.status(200).json({ data: { answer }, message: 'Successfuly created' });
     req.app.io.emit('poll-updated', { poll_id });
   } catch (e) {
-    console.log(e)
     res.status(500).json({ data: null, message: 'Something went wrong. Please try again..' });
   }
 });
@@ -163,7 +162,6 @@ router.get(
 
       res.status(404).json({ data: null, message: 'Not found' });
     } catch (e) {
-      console.log(e)
       res.status(500).json({ data: null, message: 'Something went wrong. Please try again..' })
     }
 });
